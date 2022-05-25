@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10%;
+    align-items: center;
+}
+
+nav a {
+    color: #888;
+    text-decoration: none;
+}
+
+nav>.logo {
+    font-weight: 600;
+    color: #222;
+    font-size: 20px;
+}
+
+nav>a>span {
+    color: #302CF5;
+}
+
+nav>.links>a {
+    padding: 5px 15px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 10px;
+    gap: 10px;
+}
+
+.hero span {
+    color: #302CF5;
+}
+
+.hero p {
+    color: #777;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#plans {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 10%;
+}
+
+.plan {
+    flex: 1 0 250px;
+    box-shadow: 0 5px 15px #dce5eb;
+    height: 350px;
+    border-radius: 5%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan.startup {
+    position: relative;
+    height: 430px;
+    background-color: #1a1c29;
+    border: 5px solid white;
+    color: white;
+    padding: 30px;
+}
+
+
+
+.plan .top{
+    display: flex;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.plan .top figure{
+    width: 70px;
+    height: 70px;
+    background-color: #000;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.plan .top figure::before{
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.364);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.plan .top figure::after{
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.364);
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+}
+
+.plan .top .details p span{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+}
+
+.basic .top figure{
+    background-color: #16CB88;
+}
+.startup .top figure{
+    background-color: tomato;
+}
+.enterprise .top figure{
+    background-color: #302CF5;
+}
+
+.plan .top .details p {
+    color: #888;
+    font-weight: 600;
+}
+
+.plan .features{
+    padding: 20px 0px;
+}
+
+.plan .features p{
+    padding: 8px 0px;
+    color: #777;
+}
+
+.plan b{
+    padding: 8px 0px;
+    color: #000;
+}
+
+.plan.startup b{
+    padding: 8px 0px;
+    color: #fff;
+}
+
+.plan button{
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: #302cf5;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+}
+
+.plan .details sup{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.plan.startup .top .details p span {
+    color: #fff;
+    font-weight: 500;
+}
+
+.plan.startup h3 {
+    background-color: #302cf5;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 12px;
+    padding: 5px 15px;
+}
+
+.plan.startup .features p {
+    font-size: 20px;
+    color: rgb(200, 199, 199);
+}
+
